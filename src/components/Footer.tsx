@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-center py-4 bg-violet-200 text-center">
       <div className="text-4xl font-bold">Divine Calligraphy</div>
-      <div className="mt-2 text-2xl">Let's integrate the words together!</div>
+      <div className="mt-2 text-2xl">Let&apos;s integrate the words together!</div>
       <div className="flex flex-col md:flex-row justify-between mt-4 w-full max-w-md mx-auto">
         <div className="text-base text-center md:text-left mb-4 md:mb-0">
           <div>Working Hours</div>
