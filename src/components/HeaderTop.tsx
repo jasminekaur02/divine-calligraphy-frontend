@@ -2,6 +2,7 @@ import React from 'react';
 import { FaBars, FaInstagramSquare, FaLinkedinIn } from 'react-icons/fa';
 import { IoSearchSharp } from 'react-icons/io5';
 import Image from "next/image";
+import Link from 'next/link'; // Import Link from next/link
 
 const MobileMenuButton = () => {
   return (
@@ -13,17 +14,17 @@ const MobileMenuButton = () => {
 
 const AboutTab = () => {
   return (
-    <a href="/about" className="tab text-gray-900 hover:text-indigo-600">
+    <Link href="/about" className="tab text-gray-900 hover:text-indigo-600">
       About
-    </a>
+    </Link>
   );
 };
 
 const ServicesTab = () => {
   return (
-    <a href="/services" className="tab ml-4 text-gray-900 hover:text-indigo-600">
+    <Link href="/services" className="tab ml-4 text-gray-900 hover:text-indigo-600">
       Services
-    </a>
+    </Link>
   );
 };
 
@@ -52,14 +53,14 @@ const HeaderTop = () => {
           <MobileMenuButton />
           <SearchBar />
           <div className='flex gap-4 items-center'>
+            <a href="https://www.linkedin.com/in/himani-verma-ba8b12251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn size={32} />
+            </a>
+            <a href="https://instagram.com/himani._.calligraphy?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer">
+              <FaInstagramSquare size={32} />
+            </a>
             <div className='header_top_icon_wrapper'>
               <IoSearchSharp size={32} />
-            </div>
-            <div className='header_top_icon_wrapper'>
-              <FaLinkedinIn size={32} />
-            </div>
-            <div className='header_top_icon_wrapper'>
-              <FaInstagramSquare size={32} />
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import Gallery from '@/components/Gallery';
 import Slider from '@/components/Slider';
 import { SliderData } from '../components/SliderData';
 import Footer from '@/components/Footer';
+
 const DynamicServices = dynamic(() => import('@/components/Services'), { ssr: false });
 
 const Home = () => {
